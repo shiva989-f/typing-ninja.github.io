@@ -1,11 +1,11 @@
 @font-face {
   font-family: poppins;
-  src: url(fonts/poppins.TTF);
+  src: url(/fonts/poppins.TTF);
 }
 
 @font-face {
   font-family: good-vib;
-  src: url(fonts/good_vibrations.TTF);
+  src: url(/fonts/good_vibrations.TTF);
 }
 
 :root {
