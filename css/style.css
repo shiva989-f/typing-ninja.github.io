@@ -1,12 +1,14 @@
-@font-face {
-  font-family: poppins;
-  src: url(fonts/poppins.TTF);
-}
 
 @font-face {
   font-family: good;
   src: url(fonts/good.TTF);
 }
+@font-face {
+  font-family: poppins;
+  src: url(fonts/poppins.TTF);
+}
+
+
 
 :root {
   --primary-color: #303a52;
