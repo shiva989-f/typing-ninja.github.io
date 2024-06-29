@@ -1,0 +1,149 @@
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/poppins.TTF);
+}
+
+@font-face {
+  font-family: good-vib;
+  src: url(/fonts/good_vibrations.TTF);
+}
+
+:root {
+  --primary-color: #303a52;
+  --secondary-color: #43dde6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: poppins;
+  color: var(--secondary-color);
+  /* Selecting is disable */
+  user-select: none;
+}
+
+.logo-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+
+.logo {
+  font-family: good-vib;
+  font-size: 3rem;
+  text-shadow: 0 0 0.4rem var(--secondary-color);
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  font-size: 4rem;
+  transform: translate(50%);
+  text-shadow: 0 0 0.4rem var(--secondary-color);
+  right: 50%;
+}
+
+.timer-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.timer-div #timer {
+  width: 6rem;
+  height: 6rem;
+  font-size: 2rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem var(--secondary-color), 0 0 2.5rem var(--secondary-color);
+  padding: 1.5rem;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#show-sentence {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 4rem 2rem 2rem 2rem;
+}
+.typing-section {
+  margin: 4rem 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typing-section #textarea {
+  width: 100%;
+  height: 20rem;
+  background: var(--primary-color);
+  font-family: poppins;
+  color: white;
+  outline: none;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  box-shadow: 0 0 0.5rem var(--secondary-color);
+  resize: none;
+}
+
+.typing-section #textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.typing-section #btn {
+  padding: 1rem 4rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 5rem;
+  border: none;
+  box-shadow: 0 0 0.5rem var(--secondary-color),
+    0 0 2.5rem var(--secondary-color);
+}
+
+#score {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 4rem 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 2rem;
+  }
+
+  .title {
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+    transform: translate(0%);
+    text-shadow: 0 0 0.4rem var(--secondary-color);
+    right: 0%;
+  }
+}
